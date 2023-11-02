@@ -18,6 +18,7 @@
 		FA66C2CE2AF194AC00750E61 /* CryptoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA66C2CD2AF194AC00750E61 /* CryptoViewModel.swift */; };
 		FAE810152AF2D9FE007E481F /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = FAE810142AF2D9FE007E481F /* RxCocoa */; };
 		FAE8101D2AF2D9FE007E481F /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FAE8101C2AF2D9FE007E481F /* RxSwift */; };
+		FAE810252AF3BA83007E481F /* CryptoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE810242AF3BA83007E481F /* CryptoTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -45,6 +46,7 @@
 		FA66C2C82AF184BA00750E61 /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
 		FA66C2CB2AF18D2000750E61 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
 		FA66C2CD2AF194AC00750E61 /* CryptoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoViewModel.swift; sourceTree = "<group>"; };
+		FAE810242AF3BA83007E481F /* CryptoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,8 @@
 		FA66C2B02AF0620400750E61 /* CryptoApp */ = {
 			isa = PBXGroup;
 			children = (
+				FA66C2B12AF0620400750E61 /* AppDelegate.swift */,
+				FA66C2B32AF0620400750E61 /* SceneDelegate.swift */,
 				FA66C2CA2AF18D0600750E61 /* Service */,
 				FA66C2C72AF1793800750E61 /* Model */,
 				FA66C2C62AF1792F00750E61 /* ViewModel */,
@@ -95,9 +99,8 @@
 		FA66C2C52AF1792600750E61 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				FA66C2B12AF0620400750E61 /* AppDelegate.swift */,
-				FA66C2B32AF0620400750E61 /* SceneDelegate.swift */,
 				FA66C2B52AF0620400750E61 /* ViewController.swift */,
+				FAE810242AF3BA83007E481F /* CryptoTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 				FA66C2CC2AF18D2000750E61 /* Webservice.swift in Sources */,
 				FA66C2B42AF0620400750E61 /* SceneDelegate.swift in Sources */,
 				FA66C2CE2AF194AC00750E61 /* CryptoViewModel.swift in Sources */,
+				FAE810252AF3BA83007E481F /* CryptoTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
