@@ -11,6 +11,7 @@ import RxCocoa
 
 class ViewController: UIViewController {
     @IBOutlet weak var cryptoTableView: UITableView!
+    @IBOutlet weak var activityIndicatorView: UIActivityIndicatorView!
     
     let cryptoVM = CryptoViewModel()
     var cryptoList = [Crypto]()
@@ -30,6 +31,21 @@ class ViewController: UIViewController {
     }
     
     private func setupBindings(){
+        
+//        cryptoVM
+//            .loading
+//            .subscribe { bool in
+//            if bool == true {
+//                self.activityIndicatorView.startAnimating()
+//            } else {
+//                self.activityIndicatorView.stopAnimating()
+//            }
+//        }.disposed(by: disposeBag)
+        
+        cryptoVM
+            .loading
+            .bind(to: self.activityIndicatorView.rx.isAnimating)
+            .disposed(by: disposeBag)
         
         cryptoVM
             .error
